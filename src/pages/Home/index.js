@@ -13,7 +13,7 @@ container: {
   flex: 1,
   justifyContent: 'center',
   alignItems: 'center',
-  backgroundColor: '#ff0000'
+  //backgroundColor: '#ff0000'
 },
 text: {
   fontSize: 25,

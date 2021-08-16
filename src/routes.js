@@ -15,16 +15,15 @@ const Tab = createBottomTabNavigator();
 export default function Routes(){
   return (
     <Tab.Navigator
-      tabBarOptions={{
-        style:{
+      screenOptions={{
+        tabBarStyle:{
           backgroundColor: '#121212',
           borderTopColor:'transparent',
-        },
-        activeTintColor: '#000',
-        tabStyle:{
           paddingBottom: 5,
           paddingTop: 5,
         },
+        tabBarActiveTintColor: '#fff',
+
       }}
     >
       <Tab.Screen
@@ -38,7 +37,7 @@ export default function Routes(){
       />
 
       <Tab.Screen
-       name="Procurar" 
+       name="Buscar" 
        component={Search}
        options={{
          tabBarIcon:({size, color}) => (
@@ -52,8 +51,8 @@ export default function Routes(){
        component={New}
        options={{
          tabBarLabel:'',
-         tabBarIcon:({focused, size, color}) => (
-           <ButtonNew size={size} color={color} color={focused}/>
+         tabBarIcon:({size, color, focused}) => (
+           <ButtonNew size={size} color={color} focused={focused}/>
          )
        }} 
       />
@@ -69,7 +68,7 @@ export default function Routes(){
       />
 
       <Tab.Screen 
-       name="Notoficação" 
+       name="Notificação" 
        component={Notification} 
        options={{
          tabBarIcon:({size, color}) => (
