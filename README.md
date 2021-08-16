@@ -1,5 +1,6 @@
 # React Native TabsBar
-##  Resultado do curso de React Native usando TabsBar.
+
+## Resultado do curso de React Native usando TabsBar.
 Esta aplicação simples é resultado dos meus estudos em React Native.
 
 ![video](https://github.com/maroberto/React_Native_Tabs/blob/master/images/tab.gif)
